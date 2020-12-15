@@ -12,6 +12,8 @@ These two scripts will use your SSO login to obtain temporary credentials to all
 
 For `SSO_URL` use the same url you would use for the AWS SSO login page. For `SSO_REGION` use the region in which SSO is configured. If you are using ControlTower this should likely be the same region.
 
+By default these scripts will iterate over all accounts associated with the "AWSAdministratorAccess" Role in regions `us-east-1` and `us-west-2`. You can change this inside each file.
+
 ```
 export SSO_URL=https://ACCOUNT_NUMBER.awsapps.com/start
 export SSO_REGION=us-west-2
